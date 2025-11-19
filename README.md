@@ -6,6 +6,7 @@ Hệ thống truy vấn ảnh thông minh sử dụng: - **CLIP ViT-B/32
 
 Dự án cho phép: - **Tìm ảnh bằng văn bản (Text → Image)** - **Tìm ảnh
 bằng ảnh truy vấn (Image → Image)**
+<img width="1838" height="969" alt="image" src="https://github.com/user-attachments/assets/4cc59bdc-4642-468d-958c-fa8107c6e46d" />
 
 ------------------------------------------------------------------------
 
