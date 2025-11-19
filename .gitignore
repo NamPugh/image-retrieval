@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# Dataset (KHÔNG UP ẢNH CIFAR LÊN GITHUB)
+data/images/
+data/*.faiss
+data/index.faiss
+data/meta.json
+
+# Streamlit cache
+.streamlit/
+
+# Huggingface model cache
+cache/
+huggingface/
+hf_home/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+.idea/
+__pycache__/
