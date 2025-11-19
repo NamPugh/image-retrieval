@@ -43,21 +43,21 @@ pip install -r requirements.txt
 
 # 📥 3. Tải dataset CIFAR-100
 
-Tải từ: https://www.cs.toronto.edu/\~kriz/cifar.html\
+Tải từ: https://www.cs.toronto.edu/~kriz/cifar.html
 Chọn **CIFAR-100 python version**
 
 ------------------------------------------------------------------------
 
 # 🖼️ 4. Extract ảnh
 
-Chỉnh đường dẫn trong:
+Chỉnh đường dẫn trong file `extract_cifar100.py`:
 
 ``` python
 CIFAR_DIR = r"C:\path\to\cifar-100-python"
 OUT_DIR   = "data/images"
 ```
 
-Rồi chạy:
+Chạy extract:
 
 ``` bash
 python extract_cifar100.py
@@ -94,4 +94,32 @@ NORMALIZE_EMBEDDINGS = True
 
 ------------------------------------------------------------------------
 
+# 📁 8. Cấu trúc thư mục dự án
+
+    image-retrieval/
+    │
+    ├── app.py                 # UI Streamlit
+    ├── build_index.py         # Tạo FAISS index
+    ├── search.py              # Hàm tìm kiếm ảnh
+    ├── extract_cifar100.py    # Extract CIFAR-100 → ảnh PNG
+    ├── config.py              # Config chung
+    ├── requirements.txt       # Danh sách thư viện
+    ├── README.md              # Hướng dẫn
+    ├── .gitignore             # Ignore các file không đẩy lên GitHub
+    │
+    └── data/
+        ├── images/            # 60.000 ảnh sau khi extract (train/test)
+        │    ├── train/
+        │    │     └── <class_name>/*.png
+        │    └── test/
+        │          └── <class_name>/*.png
+        │
+        ├── index.faiss        # FAISS index (tạo tự động)
+        └── meta.json          # Metadata ảnh (tạo tự động)
+
+------------------------------------------------------------------------
+
 # 🎉 Hoàn tất!
+
+Ứng dụng đã sẵn sàng để chạy trên mọi máy. Nếu cần viết báo cáo, hướng
+dẫn nâng cao, hoặc triển khai lên HuggingFace Spaces --- chỉ cần nói!
