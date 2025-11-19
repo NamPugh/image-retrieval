@@ -5,7 +5,7 @@ from PIL import Image
 
 # ==== CHỈNH ĐÚNG ĐƯỜNG DẪN NÀY ====
 CIFAR_DIR = r"D:\Downloads\cifar-100-python\cifar-100-python"
-OUT_DIR   = r"D:\Code\image_retrieval\data\images"
+OUT_DIR   = r"data\images"
 # ==================================
 
 def load_pickle(path):
